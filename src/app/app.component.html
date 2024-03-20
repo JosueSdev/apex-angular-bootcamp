@@ -1,1 +1,8 @@
-<p>root</p>
+<div>
+  <h2>ngClass</h2>
+  <span [ngClass]="getClass()">Hello</span>
+  <h2>ngStyle</h2>
+  <span [ngStyle]="getStyle()" >Hello</span>
+  <br>
+  <button (click)="toggle()">Toggle</button>
+</div>
