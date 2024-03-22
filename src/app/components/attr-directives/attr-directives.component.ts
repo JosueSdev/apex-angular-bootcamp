@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-attr-directives',
-  templateUrl: './attrDirectives.component.html',
-  styleUrl: './attrDirectives.component.scss'
+  templateUrl: './attr-directives.component.html',
+  styleUrl: './attr-directives.component.scss'
 })
 export class AttrDirectivesComponent {
   protected active = false;
