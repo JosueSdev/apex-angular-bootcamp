@@ -1,8 +1,8 @@
 <div>
   <h2>ngClass</h2>
-  <span [ngClass]="getClass()">Hello</span>
+  <span [ngClass]="{redText: active}">Hello</span>
   <h2>ngStyle</h2>
-  <span [ngStyle]="getStyle()" >Hello</span>
+  <span [ngStyle]="active ? styles : undefined" >Hello</span>
   <br>
   <button (click)="toggle()">Toggle</button>
 </div>
