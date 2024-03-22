@@ -1,0 +1,20 @@
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let char of characters">{{char}}</li>
+</ul>
+<h2>*ngIf</h2>
+<ul>
+  <ng-template ngFor let-char [ngForOf]="characters">
+    <li *ngIf="char !== 'B'">{{char}}</li>
+  </ng-template>
+</ul>
+<h2>*ngSwitch</h2>
+<ul>
+  <ng-template ngFor let-char [ngForOf]="characters">
+    <ng-container [ngSwitch]="char">
+      <li *ngSwitchCase="'A'">1</li>
+      <li *ngSwitchCase="'B'">2</li>
+      <li *ngSwitchCase="'C'">3</li>
+    </ng-container>
+  </ng-template>
+</ul>
