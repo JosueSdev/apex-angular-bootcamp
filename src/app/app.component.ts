@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  protected active = false;
-  protected styles: {
-    [key: string]: string;
-  } = { color: 'red' };
-
-  toggle = () => this.active = !this.active;
-}
+export class AppComponent {}
