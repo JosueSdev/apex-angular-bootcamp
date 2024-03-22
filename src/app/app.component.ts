@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   protected active = false;
-  protected styles: Record<string, string> = { color: 'red' };
+  protected styles: {
+    [key: string]: string;
+  } = { color: 'red' };
 
   toggle = () => this.active = !this.active;
 }
