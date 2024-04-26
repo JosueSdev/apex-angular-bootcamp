@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AModule } from './modules/a/a.module';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { BModule } from './modules/b/b.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     BrowserModule,
     /* Routing modules */
     AModule,
+    BModule,
     AppRoutingModule,
   ],
   providers: [],
